@@ -2,7 +2,7 @@
 #
 #   Finance::Math::IRR - Calculate the internal rate of return of a cash flow
 #
-#   $Id: IRR.pm,v 1.1 2007-04-11 11:36:59 erwan_lemonnier Exp $
+#   $Id: IRR.pm,v 1.2 2007-04-11 12:26:30 erwan_lemonnier Exp $
 #
 #   061215 erwan Started implementation
 #   061218 erwan Differentiate bugs from failures when calling secant() and brent()
@@ -113,6 +113,8 @@ sub xirr {
 	croak "ERROR: the provided cashflow contains undefined values"           if (!defined $date || !defined $amount);
 	croak "ERROR: invalid date in the provided cashflow [$date]"             if ($date !~ /^\d\d\d\d-\d\d-\d\d$/);
 	croak "ERROR: invalid amount in the provided cashflow at date [$date]"   if (!looks_like_number($amount));
+
+	# remove transaction from cashflow if it has a 0 amount
 	if ($amount == 0 && $date ne $date_end) {
 	    delete $cashflow{$date};
 	}
@@ -125,7 +127,6 @@ sub xirr {
 
     } elsif ($cashflow{$date_end} == 0) {
 	# the last value is 0: we may be able to handle it
-
 	# was the whole cashflow made of transactions with amount 0?
 	if (scalar keys %cashflow == 1) {
 	    _debug("all transactions in the cashflow have 0 in amount. IRR=0.");
@@ -386,7 +387,7 @@ See Math::Polynom, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: IRR.pm,v 1.1 2007-04-11 11:36:59 erwan_lemonnier Exp $
+$Id: IRR.pm,v 1.2 2007-04-11 12:26:30 erwan_lemonnier Exp $
 
 =head1 THANKS
 
