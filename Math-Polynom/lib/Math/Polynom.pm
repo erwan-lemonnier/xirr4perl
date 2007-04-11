@@ -2,7 +2,7 @@
 #
 #   Math::Polynom - Operations on polynoms
 #
-#   $Id: Polynom.pm,v 1.1 2007-04-11 08:49:27 erwan_lemonnier Exp $
+#   $Id: Polynom.pm,v 1.2 2007-04-11 09:23:30 erwan_lemonnier Exp $
 #
 #   061025 erwan Started implementation
 #   061206 erwan Added the secant method
@@ -366,7 +366,7 @@ sub newton_raphson {
 	$new_guess = $old_guess - $self->eval($old_guess)/$dividend;
 
 	$self->iterations($self->iterations + 1);
-	$self->_exception(ERROR_MAX_DEPTH,"reached maximum number of iterations [$max_depth] without getting close enough to the.",\%hash)
+	$self->_exception(ERROR_MAX_DEPTH,"reached maximum number of iterations [$max_depth] without getting close enough to the root.",\%hash)
 	    if ($self->iterations > $max_depth);
 
 	$self->_exception(ERROR_NAN,"new guess is not a real number in newton_raphson().",\%hash)
@@ -933,7 +933,7 @@ See Math::Calculus::NewtonRaphson, Math::Polynomial, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: Polynom.pm,v 1.1 2007-04-11 08:49:27 erwan_lemonnier Exp $
+$Id: Polynom.pm,v 1.2 2007-04-11 09:23:30 erwan_lemonnier Exp $
 
 =head1 THANKS
 
