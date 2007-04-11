@@ -2,7 +2,7 @@
 #
 #   Math::Polynom - Operations on polynoms
 #
-#   $Id: Polynom.pm,v 1.2 2007-04-11 09:23:30 erwan_lemonnier Exp $
+#   $Id: Polynom.pm,v 1.3 2007-04-11 10:31:27 erwan_lemonnier Exp $
 #
 #   061025 erwan Started implementation
 #   061206 erwan Added the secant method
@@ -925,7 +925,10 @@ value that is too far from the root. Example:
     $p->newton_raphson(guess => 100000000000000000);
     # returns 1e17 as the root
 
+=head1 REPOSITORY
 
+The source of Math::Polynom is hosted at sourceforge as part of the xirr4perl project. You can access
+it at https://sourceforge.net/projects/xirr4perl/.
 
 =head1 SEE ALSO
 
@@ -933,7 +936,7 @@ See Math::Calculus::NewtonRaphson, Math::Polynomial, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: Polynom.pm,v 1.2 2007-04-11 09:23:30 erwan_lemonnier Exp $
+$Id: Polynom.pm,v 1.3 2007-04-11 10:31:27 erwan_lemonnier Exp $
 
 =head1 THANKS
 
