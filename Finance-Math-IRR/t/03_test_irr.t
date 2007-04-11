@@ -1,7 +1,7 @@
 #!/usr/local/bin/perl
 #################################################################
 #
-#   $Id: 03_test_irr.t,v 1.1 2007-04-11 12:22:52 erwan_lemonnier Exp $
+#   $Id: 03_test_irr.t,v 1.2 2007-04-11 12:42:34 erwan_lemonnier Exp $
 #
 #   @author       erwan lemonnier
 #   @description  test Finance::Math::IRR against a number of cashflows verified in excell
@@ -317,6 +317,4 @@ test_xirr(-0.31488067035146, precision => 0.000001,
 	  '1999-03-28' => '12800',
 	  '2006-12-31' => '-9156',
 	);
-
-# this 
 
