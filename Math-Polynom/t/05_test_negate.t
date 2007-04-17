@@ -1,7 +1,7 @@
-#!/usr/local/bin/perl
+
 #################################################################
 #
-#   $Id: 05_test_negate.t,v 1.1 2007-04-11 08:52:34 erwan_lemonnier Exp $
+#   $Id: 05_test_negate.t,v 1.2 2007-04-17 19:25:46 erwan_lemonnier Exp $
 #
 #   @author       erwan lemonnier
 #   @description  test method negate
