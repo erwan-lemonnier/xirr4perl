@@ -1,6 +1,6 @@
 #################################################################
 #
-#   $Id: 15_test_brent.t,v 1.3 2007-04-17 19:28:31 erwan_lemonnier Exp $
+#   $Id: 15_test_brent.t,v 1.4 2007-04-17 19:32:56 erwan_lemonnier Exp $
 #
 #   @author       erwan lemonnier
 #   @description  test method brent
@@ -94,7 +94,7 @@ test_brent($p5,{a => 0, b => 10},0.03125);
 test_brent(Math::Polynom->new(1 => 1),           {a => -10, b => 10},   0);    # x
 test_brent(Math::Polynom->new(2 => 1, 0 => -1),  {a => .5, b => 10},    1);    # x^2-1
 test_brent(Math::Polynom->new(2 => 1, 0 => -1),  {a => -.5, b => -10}, -1);    # x^2-1
-test_brent(Math::Polynom->new(.5 => 1, 0 => -1), {a => 0, b => 10},     0);    # x^.5 - 1
+test_brent(Math::Polynom->new(.5 => 1, 0 => -1), {a => 0, b => 10},     1);    # x^.5 - 1
 
 # sign check
 eval { $p1->brent(a => 0, b => 1); };
