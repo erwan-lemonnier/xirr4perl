@@ -2,3 +2,7 @@
 .bak$
 ~$
 \#
+.*gz
+.*blib.*
+^Makefile$
+^Makefile\.old$

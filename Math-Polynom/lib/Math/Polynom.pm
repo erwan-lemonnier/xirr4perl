@@ -2,7 +2,7 @@
 #
 #   Math::Polynom - Operations on polynoms
 #
-#   $Id: Polynom.pm,v 1.5 2007-04-17 19:47:27 erwan_lemonnier Exp $
+#   $Id: Polynom.pm,v 1.6 2007-04-17 20:13:31 erwan_lemonnier Exp $
 #
 #   061025 erwan Started implementation
 #   061206 erwan Added the secant method
@@ -937,7 +937,7 @@ See Math::Calculus::NewtonRaphson, Math::Polynomial, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: Polynom.pm,v 1.5 2007-04-17 19:47:27 erwan_lemonnier Exp $
+$Id: Polynom.pm,v 1.6 2007-04-17 20:13:31 erwan_lemonnier Exp $
 
 =head1 THANKS
 
@@ -948,15 +948,16 @@ Thanks to Spencer Ogden who wrote the implementation of the Secant algorithm in 
 Erwan Lemonnier C<< <erwan@cpan.org> >>, 
 as part of the Pluto developer group at the Swedish Premium Pension Authority.
 
-=head1 COPYRIGHT
+=head1 LICENSE
 
 This code was developed at the Swedish Premium Pension Authority as part of
-the Authority's software development activities. You are free to use this code
-and we encourage you to help us improving this code by sending feedback and bug
-reports to the author(s).
+the Authority's software development activities. This code is distributed
+under the same terms as Perl itself. We encourage you to help us improving
+this code by sending feedback and bug reports to the author(s).
 
 This code comes with no warranty. The Swedish Premium Pension Authority and the author(s)
-decline any responsibility regarding the use of this code or any consequence of its use.
+decline any responsibility regarding the possible use of this code or any consequence
+of its use.
 
 =cut
 
