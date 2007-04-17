@@ -1,7 +1,6 @@
-
 #################################################################
 #
-#   $Id: 20_test__is_nan.t,v 1.2 2007-04-17 19:25:46 erwan_lemonnier Exp $
+#   $Id: 20_test__is_nan.t,v 1.3 2007-04-17 19:28:32 erwan_lemonnier Exp $
 #
 #   @author       erwan lemonnier
 #   @description  test Math::Polynom _is_nan

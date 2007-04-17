@@ -1,7 +1,6 @@
-
 #################################################################
 #
-#   $Id: 12_test_newton_raphson.t,v 1.2 2007-04-17 19:25:46 erwan_lemonnier Exp $
+#   $Id: 12_test_newton_raphson.t,v 1.3 2007-04-17 19:28:31 erwan_lemonnier Exp $
 #
 #   @author       erwan lemonnier
 #   @description  test method newton_raphson
