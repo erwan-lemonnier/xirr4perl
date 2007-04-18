@@ -2,7 +2,7 @@
 #
 #   Finance::Math::IRR - Calculate the internal rate of return of a cash flow
 #
-#   $Id: IRR.pm,v 1.2 2007-04-11 12:26:30 erwan_lemonnier Exp $
+#   $Id: IRR.pm,v 1.3 2007-04-18 09:49:19 erwan_lemonnier Exp $
 #
 #   061215 erwan Started implementation
 #   061218 erwan Differentiate bugs from failures when calling secant() and brent()
@@ -12,6 +12,7 @@
 #   070404 erwan Cleanup cashflow from transactions of amount 0
 #   070404 erwan Error if last transaction is a positive amount. Added $DEBUG
 #   070411 erwan Return undef when cashflow has only 1 non zero transaction
+#   070418 erwan Update license
 #
 
 package Finance::Math::IRR;
@@ -27,9 +28,7 @@ use Scalar::Util qw(looks_like_number);
 use base qw(Exporter);
 
 our @EXPORT = qw(xirr);
-
-our $VERSION = '0.07';
-
+our $VERSION = '0.08';
 our $DEBUG = 0;
 
 #----------------------------------------------------------------
@@ -40,7 +39,7 @@ our $DEBUG = 0;
 my %ARGS_SECANT = ( p0 => 0.5,
 		    p1 => 1,
 		    max_depth => 100,
-		    );
+		  );
 
 my %ARGS_BRENT = ( max_depth => 50 );
 
@@ -387,7 +386,7 @@ See Math::Polynom, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: IRR.pm,v 1.2 2007-04-11 12:26:30 erwan_lemonnier Exp $
+$Id: IRR.pm,v 1.3 2007-04-18 09:49:19 erwan_lemonnier Exp $
 
 =head1 THANKS
 
@@ -401,16 +400,19 @@ of Gnumeric 1.6.3).
 
 =head1 AUTHOR
 
-Erwan Lemonnier C<< <erwan@cpan.org> >>
+Erwan Lemonnier C<< <erwan@cpan.org> >>, 
+as part of the Pluto developer group at the Swedish Premium Pension Authority.
 
-=head1 COPYRIGHT AND LICENSE
+=head1 LICENSE
 
-This code is distributed under the same terms as Perl itself.
+This code was developed at the Swedish Premium Pension Authority as part of
+the Authority's software development activities. This code is distributed
+under the same terms as Perl itself. We encourage you to help us improving
+this code by sending feedback and bug reports to the author(s).
 
-=head1 DISCLAIMER OF WARRANTY
-
-This is free code and comes with no warranty. The author declines any personal
-responsibility regarding the use of this code or the consequences of its use.
+This code comes with no warranty. The Swedish Premium Pension Authority and the author(s)
+decline any responsibility regarding the possible use of this code or any consequence
+of its use.
 
 =cut
 

@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:         Finance-Math-IRR
 abstract:     Calculate the internal rate of return of a cash flow
-version:      0.07
+version:      0.08
 author:
     - Erwan Lemonnier <erwan@cpan.org>
 license:      perl
