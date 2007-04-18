@@ -2,7 +2,7 @@
 #
 #   Math::Polynom - Operations on polynoms
 #
-#   $Id: Polynom.pm,v 1.6 2007-04-17 20:13:31 erwan_lemonnier Exp $
+#   $Id: Polynom.pm,v 1.7 2007-04-18 05:48:33 erwan_lemonnier Exp $
 #
 #   061025 erwan Started implementation
 #   061206 erwan Added the secant method
@@ -10,6 +10,7 @@
 #   070112 erwan Fixed bug in identification of nan scalars
 #   070220 erwan Updated POD to warn for convergence toward non roots
 #   070404 erwan Added $DEBUG
+#   070412 erwan Updated POD
 #   070417 erwan Modified disclaimer
 #
 
@@ -678,9 +679,9 @@ No, don't worry, there is a good reason for this one ;)
 
 I needed (for my work at a large financial institution) a robust way to compute the internal rate of return (IRR)
 of various cashflows.
-An IRR is typically obtained by solving a usually ughly looking polynomial of one variable with up to hundreds of
+An IRR is typically obtained by solving a usually ugly looking polynomial of one variable with up to hundreds of
 coefficients and non integer powers (ex: powers with decimals). I also needed thorough exception handling.
-Other CPAN modules providing operations on polynomials did not support those requirements.
+Other CPAN modules providing operations on polynomials did not fill those requirements.
 
 If what you need is to manipulate simple polynomials with integer powers, without concern for failures,
 check out Math::Polynomial since it provides a more complete api than Math::Polynom.
@@ -937,7 +938,7 @@ See Math::Calculus::NewtonRaphson, Math::Polynomial, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: Polynom.pm,v 1.6 2007-04-17 20:13:31 erwan_lemonnier Exp $
+$Id: Polynom.pm,v 1.7 2007-04-18 05:48:33 erwan_lemonnier Exp $
 
 =head1 THANKS
 
