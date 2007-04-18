@@ -2,6 +2,7 @@ Changes
 Makefile.PL
 MANIFEST
 README
+examples/xirr.pl
 lib/Finance/Math/IRR.pm
 META.yml                                 Module meta-data (added by MakeMaker)
 t/01_test_compile.t
