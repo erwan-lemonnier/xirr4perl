@@ -2,9 +2,9 @@
 use strict;
 use warnings;
 use lib "lib/";
-use Finance::Math::IRR;
+use Math::Polynom;
 
-my $tag = "VERSION_".$Finance::Math::IRR::VERSION;
+my $tag = "VERSION_".$Math::Polynom::VERSION;
 $tag =~ s/\.//;
 print "-> tagging files with tag [$tag]\n";
 

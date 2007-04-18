@@ -6,3 +6,5 @@
 .*blib.*
 ^Makefile$
 ^Makefile\.old$
+tag_all.pl
+MANIFEST.SKIP
