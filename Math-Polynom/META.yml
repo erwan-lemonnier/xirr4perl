@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:         Math-Polynom
 abstract:     Operations on polynomials
-version:      0.12
+version:      0.13
 author:
     - Erwan Lemonnier <erwan@cpan.org>
 license:      perl
@@ -11,6 +11,8 @@ requires:
     Carp:                          0
     constant:                      0
     Data::Dumper:                  2.10
+    Data::Float:                   0
+    Scalar::Util:                  1.14
 build_requires:
     Test::More:                    0
     Test::Pod:                     0

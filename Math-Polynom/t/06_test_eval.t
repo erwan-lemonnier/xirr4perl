@@ -1,14 +1,3 @@
-#################################################################
-#
-#   $Id: 06_test_eval.t,v 1.4 2007-04-18 05:49:51 erwan_lemonnier Exp $
-#
-#   @author       erwan lemonnier
-#   @description test method eval
-#   @system       pluto
-#   @function     base
-#   @function     vf
-#
-
 use strict;
 use warnings;
 use Test::More tests => 54;
@@ -25,10 +14,10 @@ sub test_eval {
 	is($p->eval($value),$want,"eval($value) on [".$p->stringify."]");
 
 	if ($want !~ /^nan$/i) {
-	    if ($want > 0) {	
+	    if ($want > 0) {
 		is($p->xpos, $value, "xpos set to value");
 		is($p->xneg, undef,  "xneg stays undef");
-	    } elsif ($want < 0) {	
+	    } elsif ($want < 0) {
 		is($p->xpos, undef,  "xpos stays undef");
 		is($p->xneg, $value, "xneg set to value");
 	    } else {

@@ -1,14 +1,3 @@
-#################################################################
-#
-#   $Id: 12_test_newton_raphson.t,v 1.3 2007-04-17 19:28:31 erwan_lemonnier Exp $
-#
-#   @author       erwan lemonnier
-#   @description  test method newton_raphson
-#   @system       pluto
-#   @function     base
-#   @function     vf
-#
-
 use strict;
 use warnings;
 use Test::More tests => 26;
@@ -63,7 +52,7 @@ test_newton_raphson($p3,{guess => 10},1);
 test_newton_raphson($p3,{guess => 1000000},1);
 
 # TODO: handle calculation overflows...
-#my $v = $p3->newton_raphson(guess => 100000000000000000); 
+#my $v = $p3->newton_raphson(guess => 100000000000000000);
 # return 1e17, not good
 
 my $p4 = Math::Polynom->new();
