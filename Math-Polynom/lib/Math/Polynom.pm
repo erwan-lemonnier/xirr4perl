@@ -2,7 +2,7 @@
 #
 #   Math::Polynom - Operations on polynoms
 #
-#   $Id: Polynom.pm,v 1.10 2007-07-11 13:01:48 erwan_lemonnier Exp $
+#   $Id: Polynom.pm,v 1.11 2007-07-12 09:01:18 erwan_lemonnier Exp $
 #
 #   061025 erwan Started implementation
 #   061206 erwan Added the secant method
@@ -918,11 +918,12 @@ See Math::Calculus::NewtonRaphson, Math::Polynomial, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: Polynom.pm,v 1.10 2007-07-11 13:01:48 erwan_lemonnier Exp $
+$Id: Polynom.pm,v 1.11 2007-07-12 09:01:18 erwan_lemonnier Exp $
 
 =head1 THANKS
 
 Thanks to Spencer Ogden who wrote the implementation of the Secant algorithm in his module Math::Function::Roots.
+Thanks to Paul Harrington for his help testing on solaris.
 
 =head1 AUTHORS
 
