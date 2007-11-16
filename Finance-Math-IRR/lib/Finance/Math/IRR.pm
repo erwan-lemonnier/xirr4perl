@@ -2,7 +2,7 @@
 #
 #   Finance::Math::IRR - Calculate the internal rate of return of a cash flow
 #
-#   $Id: IRR.pm,v 1.5 2007-07-12 12:35:46 erwan_lemonnier Exp $
+#   $Id: IRR.pm,v 1.6 2007-11-16 06:59:59 erwan_lemonnier Exp $
 #
 #   061215 erwan Started implementation
 #   061218 erwan Differentiate bugs from failures when calling secant() and brent()
@@ -382,19 +382,22 @@ See Math::Polynom, Math::Function::Roots.
 
 =head1 VERSION
 
-$Id: IRR.pm,v 1.5 2007-07-12 12:35:46 erwan_lemonnier Exp $
+$Id: IRR.pm,v 1.6 2007-11-16 06:59:59 erwan_lemonnier Exp $
 
 =head1 THANKS
-
-Kind thanks to Gautam Satpathy (C<< gautam@satpathy.in >>) who provided me with his port of
-Gnumeric's XIRR to Java. Its source can be found at http://www.satpathy.in/jxirr/index.html.
 
 Thanks to the team of Gnumeric for releasing their implementation of XIRR
 in open source. For the curious, the code for XIRR is available in
 the sources of Gnumeric in the file 'plugins/fn-financial/functions.c' (as
 of Gnumeric 1.6.3).
 
-More thanks to Nicholas Caratzas for his efficient help and sharp financial and mathematical insight!
+Many persons have participated in the development of this code. Thanks go to:
+
+My colleagues at PPM!
+Gautam Satpathy (C<< gautam@satpathy.in >>) who provided me with his port of Gnumeric's XIRR to Java.
+Nicholas Caratzas for his efficient help and sharp financial and mathematical insight!
+Marc Chafiian for providing me with revealing examples.
+And many others who are using this code and emailed me about it.
 
 =head1 AUTHOR
 
